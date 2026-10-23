@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.png binary
+*.mp4 binary
+*.m4a binary
+*.wasm binary
+*.zip binary
+# Keep upstream license bytes and their recorded SHA-256 provenance unchanged.
+static/licenses/** -text -whitespace

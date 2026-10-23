@@ -1,0 +1,73 @@
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; color: #26354b; background: #faf9f6; font-size: 14px; line-height: 1.6; }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; }
+button, select { font: inherit; }
+button { cursor: pointer; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+button:focus-visible, summary:focus-visible { outline: 3px solid #5b85b4; outline-offset: 4px; }
+h1, h2, h3, p { margin: 0; }
+.popup-page { width: 348px; background: #fffdf9; }
+.app-brand { display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #ecebe7; padding: 20px 24px; }
+.brand-mark { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: #fff0f4; border: 1px solid #f4d9e1; border-radius: 11px; color: #d83c6f; font-size: 27px; }
+.app-brand strong { display: block; font-size: 14px; letter-spacing: .02em; }
+.app-brand small { display: block; font-size: 8px; color: #7b8595; letter-spacing: .14em; margin-top: 2px; }
+.local-tag { margin-left: auto; border: 1px solid #e0e5e6; border-radius: 5px; color: #85909a; font-size: 9px; padding: 1px 6px; }
+.popup-page main { padding: 25px 24px 15px; }
+.eyebrow { font-size: 10px; color: #ad5871; letter-spacing: .05em; margin-bottom: 10px; }
+h1 { font-size: 27px; font-weight: 650; letter-spacing: -.04em; line-height: 1.45; }
+.lead { font-size: 11px; color: #84909e; line-height: 1.9; margin-top: 12px; }
+.current-page { display: flex; align-items: center; gap: 7px; margin: 25px 0 11px; font-size: 10px; color: #8a94a0; }
+.status-dot { width: 5px; height: 5px; border-radius: 50%; background: #a0aab5; }
+.connected .status-dot { background: #4b967c; }
+.connected { color: #608878; }
+.primary-button, .secondary-button { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 15px; border-radius: 9px; font-size: 12px; font-weight: 600; }
+.primary-button { border: 1px solid #cf3e6d; background: #db4676; color: #fff; }
+.primary-button:hover:not(:disabled) { background: #c93865; }
+.secondary-button { margin-top: 10px; color: #66758a; background: #fff; border: 1px solid #e2e3e3; font-weight: 400; }
+.secondary-button:hover:not(:disabled) { background: #f6f5f1; border-color: #c5cbd2; }
+.help { border-top: 1px solid #ecebe7; margin-top: 23px; padding-top: 14px; font-size: 10px; color: #8c96a3; }
+.help summary { cursor: pointer; color: #778497; }
+.help ol { padding-left: 17px; line-height: 1.8; }
+.help p { line-height: 1.8; }
+footer { padding: 14px 24px 18px; color: #a2aab3; font-size: 9px; text-align: center; }
+.feedback { border: 1px solid #dae4e8; background: #f3f7f8; border-radius: 8px; padding: 10px 12px; margin: 12px 0; font-size: 11px; color: #526f7a; line-height: 1.6; overflow-wrap: anywhere; }
+.feedback.error { color: #ad3453; background: #fff0f3; border-color: #f0d2dc; }
+.tasks-page { min-height: 100vh; background: radial-gradient(ellipse at 90% 0, #fae8ee55, transparent 60%), #faf9f6; }
+.tasks-shell { max-width: 940px; margin: 0 auto; padding: 14px 42px 40px; }
+.tasks-shell .app-brand { padding-left: 0; padding-right: 0; }
+.tasks-shell main { padding-top: 42px; }
+.tasks-shell h1 { font-size: 38px; line-height: 1.35; }
+.tasks-shell .eyebrow { font-size: 11px; margin-bottom: 13px; }
+.tasks-shell .lead { margin-top: 17px; font-size: 12px; }
+.task-tips { display: flex; gap: 11px; align-items: center; padding: 13px 17px; margin: 25px 0 35px; color: #7f8b9b; background: #eeede966; border-radius: 9px; font-size: 11px; }
+.task-tips span { font-size: 22px; color: #a4aebb; }
+.section-heading { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
+.section-heading h2 { font-size: 15px; font-weight: 600; }
+.section-heading .text-button { margin-left: auto; }
+.count { min-width: 21px; padding: 0 6px; border-radius: 5px; background: #e8ebed; color: #8b94a0; font-size: 10px; text-align: center; }
+.text-button { padding: 5px 0; border: 0; background: transparent; color: #7f8da0; font-size: 11px; }
+.text-button:hover { color: #bc3f66; }
+.job-list { display: grid; gap: 12px; }
+.job-card { padding: 19px 21px; border: 1px solid #e1e3e2; border-radius: 12px; background: #fffdfb; box-shadow: 0 2px 4px #24365003; }
+.job-top { display: flex; align-items: center; gap: 14px; }
+.job-title { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; font-weight: 600; }
+.job-status { flex: 0 0 auto; color: #8a97a8; font-size: 11px; }
+.status-completed { color: #42806c; }
+.status-failed, .status-interrupted { color: #c14866; }
+.status-downloading, .status-processing, .status-saving { color: #b3476a; }
+.job-details { display: flex; align-items: center; gap: 12px; margin-top: 7px; }
+.job-message { flex: 1; min-width: 0; font-size: 11px; color: #8b95a2; overflow-wrap: anywhere; }
+.cancel-button { flex: 0 0 auto; padding: 4px 10px; border: 1px solid #e2e4e7; border-radius: 6px; background: #fff; color: #7d8ba0; font-size: 10px; }
+.cancel-button:hover { color: #b63c61; border-color: #e7bdcb; }
+.progress-row { display: flex; align-items: center; gap: 14px; margin-top: 13px; }
+.progress-row progress { width: 100%; height: 5px; flex: 1; border: 0; border-radius: 5px; overflow: hidden; background: #eeecef; accent-color: #df7495; }
+.progress-row progress::-webkit-progress-bar { background: #eeecef; border-radius: 5px; }
+.progress-row progress::-webkit-progress-value { background: #df7495; border-radius: 5px; }
+.progress-row span { min-width: 30px; text-align: right; color: #929cab; font-size: 10px; }
+.empty-state { border: 1px dashed #dfe2e4; border-radius: 13px; padding: 45px 20px; text-align: center; color: #8d99a8; }
+.empty-icon { color: #acb7c4; font-size: 34px; }
+.empty-state p { margin-top: 5px; font-size: 13px; }
+.empty-state small { font-size: 11px; color: #a0a9b3; }
+.tasks-shell footer { margin-top: 25px; }
+@media (max-width: 600px) { .tasks-shell { padding: 8px 20px 25px; } .tasks-shell main { padding-top: 30px; } .tasks-shell h1 { font-size: 30px; } .job-card { padding: 15px; } .task-tips { margin-bottom: 25px; } }

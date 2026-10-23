@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bili 本地下载</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" type="module"></script>
+  </head>
+  <body class="popup-page">
+    <header class="app-brand"><span class="brand-mark" aria-hidden="true">↓</span><div><strong>Bili 本地下载</strong><small>LOCAL FILES, YOUR CHOICE</small></div><span class="local-tag">本地</span></header>
+    <main>
+      <p class="eyebrow">从喜欢的画面，到自己的文件</p>
+      <h1>选好资源，<br>交给浏览器。</h1>
+      <p class="lead">视频合并、音频转换、原始轨保存。<br>你的媒体，始终在本地处理。</p>
+      <div class="current-page"><span class="status-dot" aria-hidden="true"></span><span id="page-status" role="status">正在检查当前页面…</span></div>
+      <button id="open-panel" class="primary-button" type="button" disabled>打开当前页下载面板 <span aria-hidden="true">↗</span></button>
+      <button id="open-tasks" class="secondary-button" type="button">查看全部下载任务 <span aria-hidden="true">→</span></button>
+      <p id="popup-error" class="feedback error" role="alert" hidden></p>
+      <details class="help"><summary>如何开始使用</summary><ol><li>打开 B 站视频或番剧播放页。</li><li>点击页面右下角「下载」，选择分 P、画质与音轨。</li><li>选择格式并加入任务；完成后由 Chrome 保存文件。</li></ol><p>合并 / 转码输入上限为 512 MiB。较大文件可选「原始轨」，先写浏览器临时存储再保存，受磁盘空间和存储配额限制。仅支持当前账号已取得的未加密资源。</p></details>
+    </main>
+    <footer>无需复制 Cookie · 无需启动其他程序</footer>
+  </body>
+</html>
